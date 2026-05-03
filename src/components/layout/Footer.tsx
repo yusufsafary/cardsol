@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Sparkles, Twitter, Instagram, Youtube, Discord } from "lucide-react";
+import { Sparkles, Twitter, Instagram, Youtube, MessageCircle } from "lucide-react";
 
 const footerLinks = {
   Platform: [
@@ -72,7 +72,7 @@ export default function Footer() {
                 className="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
                 aria-label="Discord"
               >
-                <Discord className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4" />
               </a>
             </div>
           </div>
