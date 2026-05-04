@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ArrowRight, Trophy, Zap, Shield, TrendingUp, Users, ChevronRight, ExternalLink } from "lucide-react";
+import { ArrowRight, Trophy, Zap, Shield, TrendingUp, Users, ChevronRight } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
@@ -123,30 +123,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black">
       <Navbar />
-
-      {/* $CRD Token Banner */}
-      <section className="border-b border-white/8 bg-white/[0.02]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 py-4">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-            <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-white animate-pulse shrink-0" />
-              <p className="text-sm text-white/80">
-                <span className="font-semibold text-white">$CRD Token</span> — Cardsol's native token is launching on{" "}
-                <span className="font-semibold text-white">kickstart.easya.io</span>
-              </p>
-            </div>
-            <a
-              href="https://kickstart.easya.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-md bg-white text-black text-xs font-semibold hover:bg-white/90 transition-colors"
-            >
-              Join Early Access
-              <ExternalLink className="w-3 h-3" />
-            </a>
-          </div>
-        </div>
-      </section>
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
@@ -368,44 +344,6 @@ export default function Home() {
                 <p className="text-sm text-white/50 leading-relaxed">"{t.text}"</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Token CTA */}
-      <section className="py-28 border-t border-white/6">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8">
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-16 relative overflow-hidden">
-            <div className="absolute inset-0 bg-grid opacity-15" />
-            <div className="relative max-w-2xl">
-              <p className="text-xs font-semibold tracking-[0.2em] text-white/30 uppercase mb-5">
-                Token Launch
-              </p>
-              <h2 className="font-display font-semibold text-[48px] lg:text-[60px] text-white tracking-[-0.04em] leading-none mb-5">
-                $CRD Token is Going Live
-              </h2>
-              <p className="text-white/40 text-lg mb-8 leading-relaxed">
-                The Cardsol native token launches on kickstart.easya.io. Get early access, earn rewards, and power the prediction economy.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <a
-                  href="https://kickstart.easya.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[15px]"
-                >
-                  Join on Kickstart
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-                <Link
-                  href="/register"
-                  className="btn-secondary inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[15px]"
-                  data-testid="button-cta-final"
-                >
-                  Create Account
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>

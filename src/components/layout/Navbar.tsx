@@ -11,14 +11,14 @@ const navLinks = [
 ];
 
 const tickerItems = [
-  { text: "$CRD Token Launching Soon", link: "https://kickstart.easya.io/", linkText: "Join on Kickstart →" },
-  { text: "Follow the Builder for updates", link: "https://twitter.com", linkText: "@cardsol_builder" },
-  { text: "$CRD Token — Early Access Now Live", link: "https://kickstart.easya.io/", linkText: "kickstart.easya.io →" },
+  { text: "Follow the Builder for updates", link: "https://x.com/samurai16sol", linkText: "@samurai16sol" },
   { text: "Prediction Cards. Real Prizes.", link: null, linkText: null },
-  { text: "$CRD Token Launching Soon", link: "https://kickstart.easya.io/", linkText: "Join on Kickstart →" },
-  { text: "Follow the Builder for updates", link: "https://twitter.com", linkText: "@cardsol_builder" },
-  { text: "$CRD Token — Early Access Now Live", link: "https://kickstart.easya.io/", linkText: "kickstart.easya.io →" },
+  { text: "$CRD Token — Coming Soon", link: null, linkText: null },
+  { text: "Open Packs. Make Calls. Win Big.", link: null, linkText: null },
+  { text: "Follow the Builder for updates", link: "https://x.com/samurai16sol", linkText: "@samurai16sol" },
   { text: "Prediction Cards. Real Prizes.", link: null, linkText: null },
+  { text: "$CRD Token — Coming Soon", link: null, linkText: null },
+  { text: "Open Packs. Make Calls. Win Big.", link: null, linkText: null },
 ];
 
 function CardsolLogo() {

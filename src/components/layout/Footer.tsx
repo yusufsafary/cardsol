@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Twitter, Instagram, Youtube, MessageCircle, ExternalLink } from "lucide-react";
+import { Twitter, Instagram, Youtube, MessageCircle } from "lucide-react";
 
 const footerLinks = {
   Platform: [
@@ -21,7 +21,7 @@ const footerLinks = {
 };
 
 const socials = [
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
+  { icon: Twitter, label: "Twitter / X", href: "https://x.com/samurai16sol" },
   { icon: Instagram, label: "Instagram", href: "https://instagram.com" },
   { icon: Youtube, label: "YouTube", href: "https://youtube.com" },
   { icon: MessageCircle, label: "Discord", href: "https://discord.com" },
@@ -30,29 +30,6 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="border-t border-white/8 bg-black">
-      {/* Token Banner in footer */}
-      <div className="border-b border-white/6 bg-white/[0.02]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-center sm:text-left">
-            <p className="text-white font-semibold text-sm tracking-tight">
-              $CRD Token — Now on Kickstart
-            </p>
-            <p className="text-white/40 text-xs mt-0.5">
-              Cardsol's native token. Early access available now.
-            </p>
-          </div>
-          <a
-            href="https://kickstart.easya.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-md bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors shrink-0"
-          >
-            kickstart.easya.io
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
           <div className="md:col-span-2">
@@ -73,7 +50,7 @@ export default function Footer() {
               The premier platform for prediction cards. Open mystery packs, trade rare cards, and win cash prizes on real-world events.
             </p>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mb-6">
               {socials.map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
@@ -87,6 +64,20 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+
+            <a
+              href="https://orynth.dev/projects/cardsol"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://orynth.dev/api/badge/cardsol?theme=light&style=default"
+                alt="Featured on Orynth"
+                width="160"
+                height="50"
+                className="opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </a>
           </div>
 
           {Object.entries(footerLinks).map(([category, links]) => (
